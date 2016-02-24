@@ -1,0 +1,25 @@
+{
+  "name": "ng-material-grid",
+  "homepage": "https://github.com/arshabh/ng-material-grid",
+  "authors": [
+    "Arshabh Agarwal <arshabh.agarwal.it@gmail.com>"
+  ],
+  "description": "Grid component for projects that are using angular material and angular",
+  "main": "directive.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "grid",
+    "angular",
+    "material"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

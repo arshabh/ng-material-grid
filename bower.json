@@ -5,7 +5,7 @@
     "Arshabh Agarwal <arshabh.agarwal.it@gmail.com>"
   ],
   "description": "Grid component for projects that are using angular material and angular",
-  "main": ["ng-material-grid.scss", "ng-material-grid.js"],
+  "main": ["ng-material-grid.css", "ng-material-grid.js"],
   "moduleType": [
     "globals"
   ],

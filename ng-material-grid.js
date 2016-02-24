@@ -4,9 +4,8 @@
     return {
       restrict: 'EA',
       scope: {},
-      link: function (scope, element, attrs) {
-
-      }
+      templateUrl: 'ng-material-grid.html',
+      link: function (scope, element, attrs) {}
     }
   })
 })();

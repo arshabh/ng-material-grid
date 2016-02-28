@@ -6,7 +6,7 @@
   ],
   "description": "Grid component for projects that are using angular material and angular",
   "main": [
-    "ng-material-grid.css",
+    "dist/ng-material-grid.css",
     "dist/ng-material-grid.min.js"
   ],
   "moduleType": [

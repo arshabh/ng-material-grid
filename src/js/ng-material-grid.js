@@ -1,5 +1,5 @@
 (function () {
-  angular.module("ng-material-grid", []).
+  angular.module("ng-material-grid", ['ngSanitize']).
       directive("ngMaterialGrid", function () {
     return {
       restrict: 'EA',
@@ -15,11 +15,9 @@
         _.each(scope.data, function (datum) {
           var rowData = [];
           _.each(scope.config.columnDefs, function (def) {
-            rowData.push({
-              val: _.get(datum, def.field),
-              width: def.width,
-              align: def.align
-            });
+            var fieldVal = _.get(datum, def.field);
+            def.val = def.cellValue ? def.cellValue(fieldVal, datum) : fieldVal;
+            rowData.push(def);
           });
           scope.rows.push(rowData);
         });

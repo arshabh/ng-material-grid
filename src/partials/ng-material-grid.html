@@ -1,0 +1,24 @@
+<md-content flex layout="column" class="ng-material-grid">
+  <md-content class="ng-material-grid-header-wrapper">
+    <md-toolbar class="{{theme}} ng-material-grid-header" flex>
+      <div flex layout>
+        <span flex="{{def.width}}" ng-repeat="def in config.columnDefs"
+              layout class="layout-align-{{def.align}}-center ng-material-grid-cell">
+        {{def.headerText}}
+      </span>
+      </div>
+    </md-toolbar>
+  </md-content>
+  <md-content flex class="ng-material-grid-body" layout="column">
+    <div ng-repeat-start="row in rows" layout class="ng-material-grid-row">
+      <span flex="{{cell.width}}" ng-repeat="cell in row"
+            layout class="layout-align-{{cell.align}}-center ng-material-grid-cell">
+        {{cell.val}}
+      </span>
+    </div>
+    <md-divider ng-repeat-end></md-divider>
+  </md-content>
+  <md-content class="ng-material-grid-footer" ng-if="config.footer">
+    <md-toolbar class="{{theme}}"></md-toolbar>
+  </md-content>
+</md-content>

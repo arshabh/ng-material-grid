@@ -5,7 +5,10 @@
     "Arshabh Agarwal <arshabh.agarwal.it@gmail.com>"
   ],
   "description": "Grid component for projects that are using angular material and angular",
-  "main": ["ng-material-grid.css", "ng-material-grid.js"],
+  "main": [
+    "ng-material-grid.css",
+    "dist/ng-material-grid.min.js"
+  ],
   "moduleType": [
     "globals"
   ],
@@ -24,6 +27,7 @@
   ],
   "dependencies": {
     "angular": "~1.5.0",
-    "angular-material": "~1.0.5"
+    "angular-material": "~1.0.5",
+    "lodash": "^4.5.1"
   }
 }

@@ -1,0 +1,15 @@
+.ng-material-grid .ng-material-grid-header-wrapper {
+  min-height: 50px;
+  max-height: 50px; }
+  .ng-material-grid .ng-material-grid-header-wrapper .ng-material-grid-header {
+    min-height: 50px;
+    max-height: 50px; }
+.ng-material-grid .ng-material-grid-body .ng-material-grid-row {
+  min-height: 50px; }
+.ng-material-grid .ng-material-grid-footer {
+  min-height: 50px;
+  max-height: 50px; }
+.ng-material-grid .ng-material-grid-cell {
+  margin: 0 5px; }
+
+/*# sourceMappingURL=ng-material-grid.css.map */

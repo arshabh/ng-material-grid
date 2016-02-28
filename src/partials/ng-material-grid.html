@@ -3,7 +3,7 @@
     <md-toolbar class="{{theme}} ng-material-grid-header" flex>
       <div flex layout>
         <span flex="{{def.width}}" ng-repeat="def in config.columnDefs"
-              layout class="layout-align-{{def.align}}-center ng-material-grid-cell">
+              layout class="layout-align-{{def.align}}-center ng-material-grid-cell {{def.headerClass}}">
         {{def.headerText}}
       </span>
       </div>
@@ -14,8 +14,8 @@
       <span flex="{{cell.width}}" ng-repeat="cell in row" layout>
         <span ng-switch on="cell.cellFormat" flex
               layout class="layout-align-{{cell.align}}-center ng-material-grid-cell">
-          <span ng-switch-when="html" ng-bind-html="cell.val"></span>
-          <span ng-switch-default="">{{cell.val}}</span>
+          <span ng-switch-when="html" ng-bind-html="cell.val" class="{{cell.cellClass}}"></span>
+          <span ng-switch-default class="{{cell.cellClass}}">{{cell.val}}</span>
         </span>
       </span>
     </div>

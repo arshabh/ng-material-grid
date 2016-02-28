@@ -2,7 +2,7 @@
   angular.module("ngMaterialGridDemo", ['ngMaterial', 'ng-material-grid']).
       controller('MainController', function ($scope) {
     $scope.config = {
-      theme: 'primary',
+      theme: 'accent',
       footer: true,
       columnDefs: [
         {
@@ -15,8 +15,9 @@
           headerText: 'Age',
           align: 'start',
           cellFormat: 'html',
+          cellClass: 'blue',
           cellValue: function (age, data) {
-            return "<span>"+ age +"</span>";
+            return "<span>"+ age +"( "+ data.name +" )</span>";
           }
         },
         {

@@ -22,6 +22,10 @@
           scope.rows.push(rowData);
         });
 
+        scope.showGridView = function (bool) {
+          scope.gridViewActive = bool;
+        }
+
       }
     }
   })

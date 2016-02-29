@@ -2,7 +2,7 @@
   angular.module("ngMaterialGridDemo", ['ngMaterial', 'ng-material-grid']).
       controller('MainController', function ($scope) {
     $scope.config = {
-      theme: 'accent',
+      theme: 'primary',
       footer: true,
       columnDefs: [
         {

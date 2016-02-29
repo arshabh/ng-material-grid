@@ -24,8 +24,12 @@
   .ng-material-grid .ng-material-grid-header-wrapper .ng-material-grid-header {
     min-height: 50px;
     max-height: 50px; }
+    .ng-material-grid .ng-material-grid-header-wrapper .ng-material-grid-header md-checkbox {
+      margin: 0; }
 .ng-material-grid .ng-material-grid-body .ng-material-grid-row {
   min-height: 50px; }
+  .ng-material-grid .ng-material-grid-body .ng-material-grid-row md-checkbox {
+    margin: 0; }
 .ng-material-grid .ng-material-grid-footer-wrapper {
   min-height: 50px;
   max-height: 50px; }

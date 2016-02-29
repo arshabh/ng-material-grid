@@ -3,6 +3,7 @@
       controller('MainController', function ($scope) {
     $scope.config = {
       theme: 'primary',
+      gridView: false,
       footer: true,
       columnDefs: [
         {

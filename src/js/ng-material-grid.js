@@ -11,6 +11,8 @@
       link: function (scope, element, attrs) {
         scope.theme = "md-" + (scope.config.theme || 'primary');
 
+        scope.gridViewActive = scope.config.gridView;
+
         scope.rows = [];
         _.each(scope.data, function (datum) {
           var rowData = [];
